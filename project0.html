@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Groceries</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+		body{
+			margin-top:10px;
+		}
+
+		.row>div{
+			margin: 10px;
+			padding: 30px;
+			text-align: center;
+		}
+		#s1>img{
+			height: 100%;
+			width: 80%;
+			border-radius: 20px;
+		}
+
+		#s3>img{
+			height: 90%;
+			width: 80%;
+			border-radius: 10px;
+		}
+
+		#label_s3{
+			margin-top: 10px;
+			font-size: 16px;
+			border: 1px solid #dfebea;
+			background-color: #dfebea;
+			width: 96%;
+			border-radius: 3px;
+		}
+
+		.text{
+			margin-top: 5px;
+			font-size: 16px;
+			background-color: #dfebea;
+			border: 5px solid white;
+			border-radius: 3px;
+			width: 80px;
+		}
+
+		#price{
+			font-weight: bold;
+		}
+
+		#s2{
+			text-align: left;
+		}
+
+		button{
+			height:55px;
+			width: 55px;
+			font-size: 12px;
+			background-color: white;
+			border: 1px solid gray;
+			border-radius: 7px;
+			outline: none;
+		}
+
+		button:focus{
+			background-color: lightgreen;
+			color: white;
+			outline: none;
+		}
+
+		button:focus:after{
+			background-color: lightgreen;
+			color: white;
+			outline: none;
+		}
+
+		#b1{
+			margin-right: 20px;
+
+		}
+
+		#p_qu{
+			font-size: 11px;
+			margin-top: 10px;
+		}
+
+		#ip_q{
+			outline: none;
+			border-radius: 20px;
+			padding: 5px;
+			height: 30px;
+			width: 70px;
+			text-align: center;	
+			border: 1px solid gray;
+			font-weight: bolder;
+		}
+		
+		input[type = "submit"]{
+			height: 35px;
+			width: 100px;
+			font-weight: bold;
+			border: 1px solid black;
+			background-color: #3262a8;
+			border-radius: 20px;
+			outline: none;
+			color: white;
+			margin-top: 10px;
+		}		
+
+		input[type = "submit"]:active{
+			background-color: white;
+			color: #3262a8;
+
+		}
+
+		.s4{
+			height: 100px;
+			width: 140px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-sm-11" id="s1">
+				<img src="aashirwad-flour.jpg">
+			</div>
+			<div class="col-lg-5 col-sm-11" id="s2">
+				<label>Aashirwad Atta Whole Wheat</label>
+				<br>
+				<label id="price">Rs. 399</label>
+				<br>
+				<label id="s2p">Pack sizes <br> 
+					<button id="b1"> 10 kg <br> Rs 399 </button>
+					<button id="b2"> 5 kg <br> Rs 209 </button>
+				</label>
+				<br>
+				<span id="p_qu">QUANTITY:</span> <br>
+				<input list="quantity" id="ip_q" >
+				<datalist id="quantity">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</datalist>
+				<br>
+				<input type="submit" value="Payable" id = "payable"> </input>
+			</div>
+			
+		</div>
+
+		<div class="row">
+			<div class="col-lg-5 col-sm-11" id="s3">
+				<img src="spices.jpeg">
+				<br>
+				<label id="label_s3"> 
+					Masalas, Spices & Cooking paste
+				</label>
+			</div>
+			<div class="col-lg-5 col-sm-11" id="s4">
+				<table width="100%" height="80%" cellpadding="5px" cellspacing="5px">
+					<tr>
+						<td>
+							<img class="s4" src="spices.jpeg">
+						</td>
+						<td>
+							<img class="s4" src="pulses.jpeg">
+						</td>
+					</tr>
+					<tr>
+						<td class="text">
+							Spices
+						</td>
+						<td class="text">
+							Dals & Pulses
+						</td>
+					</tr>
+					<tr style="margin-top: 30px">
+						<td>
+							<img class="s4" src="rice.jpeg">
+						</td>
+						<td>
+							<img class="s4" src="oil.jpeg">
+						</td>
+					</tr>
+					<tr>
+						<td class="text">
+							Rice & Rice Products
+						</td>
+						<td class="text">
+							Cooking Oil
+						</td>
+					</tr>
+				</table>	
+			</div>
+	
+		</div>
+	</div>
+</body>
+</html>
